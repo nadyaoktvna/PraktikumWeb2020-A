@@ -1,95 +1,171 @@
 <!DOCTYPE html>
-    <head>
+    <head> <!--tag head untuk menampilkan informasi dari website-->
         <link rel="icon" type="image/svg" href="img/svg/undraw_refreshing_beverage_td3r.svg">
-        <title>
-            Tugas Tabel
-        </title>
+        <!--Tag link digunakan untuk menunjukkan sebuha hubungan anatar dokumen yang bersangkutan dengan sumber file dari luar
+            link yang ditulis di helemen head ini menunjukkan hubungan antara dokumen html dengan icon yang diambil dari folder icon
+            atribut rel menunjukkan relasi atau hubungan dengan file yang bersangkutan yaitu icon untuk judul web -->
+        <title>Tugas Tabel</title>
+        <!--Tag title untuk judul website-->
     </head>
-    <body>
+    <body> <!--Isi dari halaman website-->
         <h1 align="center">DAFTAR HADIR</h1>
+        <!--Tag h1 untuk judul utama dan diberikan atribut align untuk membuat teks berada di tengah halaman yaitu center-->
         <p align="center">PRAKTIKUM PEMROGRAMAN BERBASIS WEB</p>
+        <!--Tag p digunakan untuk membuat sebuah paragraf dan diberikan atribut align untuk membuat teks berada di tengah halaman-->
         <hr>
-        <br>
+        <!--Tag hr digunakan untuk membuat garis horizontal sesuai dengan panjang layar yang ditampilkan pada web browser-->
+        <br><br>
+        <!--Tag untuk membuat baris baru kebawah-->
         <table border="1" width="100%">
+        <!--Tag untuk membuat tabel dengan atribut border sebesar 1 dan lebar 100% artinya besar tabel akan mengikuti besar layar yang dibuka pada web browser-->
             <tr bgcolor="#f47676" align="center">
+            <!--Tag tr untuk membuat baris pertama dengan tambahan atribut warna latar dan tata letak huruf berada di tengah/center-->
                 <td rowspan="2"><strong>NIM</strong></td>
+                <!--Tag td untuk kolom pertama dengan merge/gabungan baris sebanyak dua baris-->
                 <td rowspan="2"><strong>Nama</strong></td>
+                <!--Tag td untuk kolom kedua dengan merge/gabungan baris sebanyak 2 baris-->
                 <td colspan="5"><strong>Pertemuan</strong>
+                <!--Tag td untuk kolom ketiga dengan merge/gabungan baris sebanayak 5 baris-->
             </tr>
             <tr id="jumlah-pertemuan" align="center" bgcolor="#f47676">
+            <!--Tag tr utuk baris kedua, diberikan id untuk memberi informasi bahwa baris ini digunakan untuk membuat jumlah pertemuan
+                Kolom ini akan otomatis bergeser di kolom ketika di bari spertama sebelumnya karena pada kolom pertama baris satu, baris kedua sudah digabung menjadi satu, 
+                dan untuk kolom kedua baris pertama sebelumny ajuga bari skedua ini digabung menjadi satu baris oleh sebab itu ketika ditambahkan kolom baru,
+                maka kolom ini akan bergeser dan dimulai di kolom ketiga baris kedua-->
                 <td><strong>1</strong></td>
+                <!--Tag td untuk kolom pertemuan pertama-->
                 <td><strong>2</strong></td>
+                <!--Tag td untuk kolom pertemuan kedua-->
                 <td><strong>3</strong></td>
+                <!--Tag td untuk kolom pertemuan ketiga-->
                 <td><strong>4</strong></td>
+                <!--Tag td untuk kolom pertemuan keempat-->
                 <td><strong>5</strong></td>
+                <!--Tag td untuk kolom pertemuan kelima-->
             </tr>
             <tr id="baris-nim-1" align="center">
+            <!--Tag baris baru yang berisikan informasi kehadiran nim 1-->
                 <td id="nim-1">1808561001</td>
+                <!--Tag td yang pertama berisi informasi mengenai NIM-->
                 <td id="nama-1">Safira</td>
+                <!--Tag td yang kedua berisi informasi mengenai Nama-->
                 <td id="hadir-1"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
-                <td id="hadir-2" align="center" size="4"><strong>&#10060;</strong></span></td>
-                <td id="hadir-3" align="center" size="4"><strong>&#10060;</strong></span></td>
+                <!--Tag td yang ketiga digunakan untuk menunjukkan kehadiran pada pertemuan pertama
+                    kehadiran disini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
+                <td id="hadir-2" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td keempat ini menunjukkan ketidakhadiran pada kolom keempat yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
+                <td id="hadir-3" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td kelima ini menunjukkan ketidakhadiran pada kolom kelima yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
                 <td id="hadir-4"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                <!--Tag td yang keenam ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
                 <td id="hadir-5"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                <!--Tag td yang ketujuh ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
             </tr>
             <tr id="baris-nim-2" align="center">
+            <!--Tag baris baru yang berisikan informasi kehadiran nim 2-->
                 <td id="nim-2">1808561002</td>
+                <!--Tag td yang pertama berisi informasi mengenai NIM-->
                 <td id="nama-2">Ni Putu Ambalika Dewi</td>
+                <!--Tag td yang kedua berisi informasi mengenai Nama-->
                 <td id="hadir-1"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                 <!--Tag td yang ketiga ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
                 <td id="hadir-2"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                 <!--Tag td yang keempat ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
                 <td id="hadir-3"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
-                <td id="hadir-4" align="center" size="4"><strong>&#10060;</strong></span></td>
-                <td id="hadir-5" align="center" size="4"><strong>&#10060;</strong></span></td>
+                 <!--Tag td yang kelima ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
+                <td id="hadir-4" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td keenam ini menunjukkan ketidakhadiran yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
+                <td id="hadir-5" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td ketujuh ini menunjukkan ketidakhadiran yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
             </tr>
             <tr id="baris-nim-3" align="center">
+            <!--Tag baris baru yang berisikan informasi kehadiran nim 3-->
                 <td id="nim-3">1808561003</td>
+                <!--Tag td yang pertama berisi informasi mengenai NIM-->
                 <td id="nama-3">Ayu Kadek Nadya Oktaviana</td>
-                <td id="hadir-1" align="center" size="4"><strong>&#10060;</strong></span></td>
-                <td id="hadir-2" align="center" size="4"><strong>&#10060;</strong></span></td>
+                <!--Tag td yang kedua berisi informasi mengenai Nama-->
+                <td id="hadir-1" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td ketiga ini menunjukkan ketidakhadiran yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
+                <td id="hadir-2" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td keempat ini menunjukkan ketidakhadiran yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
                 <td id="hadir-3"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
-                <td id="hadir-4" align="center" size="4"><strong>&#10060;</strong></span></td>
+                <!--Tag td yang kelima ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
+                <td id="hadir-4" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td keenam ini menunjukkan ketidakhadiran yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
                 <td id="hadir-5"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                <!--Tag td yang ketujuh ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
             </tr>
             <tr id="baris-nim-4" align="center">
+            <!--Tag baris baru yang berisikan informasi kehadiran nim 4-->
                 <td id="nim-4">1808561004</td>
+                <!--Tag td yang pertama berisi informasi mengenai NIM-->
                 <td id="nama-4">Gusti Ayu Vidjaretha Wardana</td>
+                <!--Tag td yang kedua berisi informasi mengenai Nama-->
                 <td id="hadir-1"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                <!--Tag td yang ketiga ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
                 <td id="hadir-2"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                <!--Tag td yang keempat ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
                 <td id="hadir-3"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                <!--Tag td yang kelima ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
                 <td id="hadir-4"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                <!--Tag td yang keenam ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
                 <td id="hadir-5"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                <!--Tag td yang ketujuh ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
             </tr>
             <tr id="baris-nim-6" align="center">
+            <!--Tag baris baru yang berisikan informasi kehadiran nim 6-->
                 <td id="nim-6">1808561006</td>
+                <!--Tag td yang pertama berisi informasi mengenai NIM-->
                 <td id="nama-6">Luh Putu Eka Nadya Wati</td>
+                <!--Tag td yang kedua berisi informasi mengenai Nama-->
                 <td id="hadir-1"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                <!--Tag td yang ketiga ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
                 <td id="hadir-2"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
-                <td id="hadir-3" align="center" size="4"><strong>&#10060;</strong></span></td>
+                <!--Tag td yang keempat ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
+                <td id="hadir-3" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td kelima ini menunjukkan ketidakhadiran yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
                 <td id="hadir-4"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
-                <td id="hadir-5" align="center"><strong>&#10060;</strong></span></td>></td>
+                <!--Tag td yang keenam ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
+                <td id="hadir-5" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td ketujuh ini menunjukkan ketidakhadiran yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
             </tr>
             <tr id="baris-nim-7" align="center">
+            <!--Tag baris baru yang berisikan informasi kehadiran nim 7-->
                 <td id="nim-7">1808561007</td>
+                <!--Tag td yang pertama berisi informasi mengenai NIM-->
                 <td id="nama-7">Hairul Lana</td>
-                <td id="hadir-1" align="center"><strong>&#10060;</strong></span></td>></td>
+                <!--Tag td yang kedua berisi informasi mengenai Nama-->
+                <td id="hadir-1" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td ketiga ini menunjukkan ketidakhadiran yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
                 <td id="hadir-2"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
-                <td id="hadir-3" align="center"><strong>&#10060;</strong></span></td>
+                <!--Tag td yang keempat ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
+                <td id="hadir-3" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td kelima ini menunjukkan ketidakhadiran yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
                 <td id="hadir-4"><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
-                <td id="hadir-5" align="center"><strong>&#10060;</strong></span></td>
+                <!--Tag td yang keenam ini ditandai dengan atribut img yaitu gambar ttd yang diambil dari folder ttd dengan lebar 70-->
+                <td id="hadir-5" align="center"><strong>&#10060;</strong></td>
+                <!--Tag td ketujuh ini menunjukkan ketidakhadiran yang ditunjukkan dengan emoji silang berwarna merah dan ditambahkan dengan atribut strong untuk menebalkan emoji tersebut-->
             </tr>
         </table>
-        <br><br>
+        <br><br> <!--tag dua baris baru atau break-->
         <table border="1">
+        <!--Tag tabel baru yang digunakan untuk menunjukkan keterangan hadir dan tidak hadir-->
             <tr align="center" bgcolor="#f47676">
+            <!--Tag baris pertama dengan atribut align untuk membuat teks berada di tengah dan background color-->
                 <td colspan="2"><strong>KETERANGAN</strong></td>
+                <!--Tag td dengan atribut colspan digunakan untuk mem-merge/menggabungkan kolom pertama dan kedua pada baris pertama-->
             </tr>
-            <tr>
+            <tr> <!--Baris kedua-->
                 <td><img src="img/ttd/1200px-Signature_of_Jennie.png" width="70"></td>
+                <!--Tag td untuk kolom pertama yang dimasukkan atribut img-->
                 <td>Hadir</td>
+                <!--Tag td kedua untuk memeberi keterangan hadir yang ditunjukkan dengan gambar pada kolom pertama sebelumnya-->
             </tr>
             <tr>
-                <td align="center"><strong>&#10060;</strong></span></td>
+                <td align="center"><strong>&#10060;</strong></td>
+                <!--Tag td untuk kolom pertama yang dimasukkan atribut center-->
                 <td>Tidak Hadir</td>
+                <!--Tag td kedua untuk memeberi keteranagan tidak hadir yang ditunjukkan dengan kode emoji pada kolom pertama sebelumnya-->
             </tr>
         </table>
     </body>
