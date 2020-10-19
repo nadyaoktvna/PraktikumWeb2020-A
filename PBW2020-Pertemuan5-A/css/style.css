@@ -1,0 +1,140 @@
+/* Sintaks css yang diawali dengan selector tanda titik(.) digunakan hanya untuk class */
+/* Selektor tanda titik yang diikuti dengan tag-tag html berarti css untuk tag yang berada dalam class itu sendiri  */
+
+.header img{
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    opacity: 0.8;
+}
+/* Sintaks css diatas digunakan untuk class header dengan tag img */
+/* Tag img ini akan memiliki lebar 100% artinya akan memiliki lebar sesuai dengan panajng web bworser yang dibuka */
+/* Height untuk tinggi gambar sebesar 200pixel */
+/* Opacity untuk transparansi dari gambar yang dimasukkan, semakin kecil ukuran yang diinput maka semakin transparansi gambar yang ditampilkan begitu juga sebaliknya, 
+    semakin besar ukuran yang diinput maka semakin jelas gambar yang ditampilkan */
+
+.header h1{
+    position: absolute;
+    font-size: 50px;
+    top: 50px;
+    left: 100px;
+    color: rgb(48, 48, 48);
+    font-family: 'Playfair Display', serif;
+}
+/* Sintaks ini digunakan untuk tag h1 yang berada di class header */
+/* Positition:absolute artinya letaknya penempatannya berpatokan pada layar browser atau pojok kiri atas browser*/
+/* Font- size untuk mengatur ukuran huruf */
+/* top digunakan untuk mengatur jarat tepi atas sebesar 50px dari batas atas layar website */
+/* Left untuk mengatur jarak tepi kiri sebesar 100px dari sisi kiri website */
+/* color untuk mewarnai warna huruf */
+/* font-family untuk mengubah font */
+
+.header p{
+    position: absolute;
+    font-size: 20px;
+    top: 110px;
+    left: 100px;
+    color: rgb(48, 48, 48);
+    font-family: 'Montserrat', sans-serif;
+}
+/* Sintaks diatas untuk tag paragraf (p) yang terdapat pada class header */
+
+.form-style {
+	margin:5px 100px 5px 100px;
+	max-width: 100%;
+	padding: 10px 10px 10px 10px;
+    font: 10px "Lucida Sans Unicode" sans-serif;
+}
+/* Sintaks diatas digunakan untuk mendesain class form-style */
+/* margin untuk mengatur jarak tepi yang nilainya akan dihitung dari top, right, bottom, left*/
+/* max-width untuk mengatur ukuran lebar yang disesuaikan dengan tampilan web browser */
+/* padding digunakan untuk mengaplikasikan jarak tepi pada sebuah elemen bagian dalam */
+
+.form-style li {
+	padding: 0;
+	display: block;
+	list-style: none;
+    margin: 10px;
+}
+/* Sintaks ini untuk mendesain item list */
+/* display:block akan membuat blok baru pada tampilan, dimana elemen ini akan memebntang dari kiri hingga ke kanan mengisi penuh lebar dari halaman browser */
+/* properti list-style untuk menentukan atau mengatur list yang akan ditampilkan di layar */
+/* Penanda none digunakan untuk menghilangkan tanda pada list */
+
+.form-style label{
+	margin: 0 0 3px 0;
+	padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Sintaks ini untuk mendesain tag label */
+
+.divided-2{
+    width: 49%;
+}
+/* Sintaks ini untuk mendesain class devided-2 */
+/* Sintaks ini akan membagi dua elemen yang menggunakan class ini */
+
+.form-style input[type=text],
+.form-style input[type=number],
+.form-style input[type=email],
+.form-style input[type=file],
+.form-style select{
+	box-sizing: border-box;
+    border: 1px solid #faadad;
+    border-radius: 5px;
+	padding: 8px;
+    margin: 0px;
+    color: #555555;
+	outline: none;	
+}
+/* Sintaks ini untuk mendesain class form-style yang memiliki tag input */
+
+.form-style input[type=text]:focus, 
+.form-style input[type=number]:focus,
+.form-style input[type=email]:focus,
+.form-style input[type=file]:focus,
+.form-style select:focus{
+	box-shadow: 0 0 5px  #ff9595;
+    border: 1px solid  #ff9595;
+}
+/* Sintaks diatas untuk mendesain box input data ketika kita men-select box tersebut yang ditandai dengan properti focus */
+
+.form-style .field-divided-2{
+	width: 49%;
+}
+/* Sintaks ini untuk membagi class menjadi dua di satu baris */
+
+.form-style .field-divided-3{
+    width: 32.55%;
+}
+/* Sintaks ini untuk membagi class menjadi tiga di satu baris */
+
+.form-style .field-long{
+	width: 98.5%;
+}
+/* Sintaks ini untuk menampilkan box sebesar 98.5% sepanjang layar browser */
+
+.form-style input[type=submit], .form-style input[type=button]{
+    background: #ff8282;
+    padding: 11px 33px 11px 33px;
+    border: 2px solid  #ff8282;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+/* SIntaks ini digunakan untuk mendesain tombol submit */
+/* Background untuk warna dari tombol submit itu sendiri */
+/* padding untuk ukuran tombol submit */
+/* border untuk memberikan garis luar pada tombol submit */
+/* border-radius digunakan untuk membuat radius di ujung-ujung tombol */
+
+.form-style input[type=submit]:hover, .form-style input[type=button]:hover{
+	font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+	padding: 11px 33px 11px 33px;
+    border: 2px solid  #ff9595;
+    border-radius: 3px;
+	color: rgb(48, 48, 48);
+}
+/* SIntaks ini juga digunakan untuk mendesain tombol submit, namun ditambahkan properti yang baru yaitu hover */
+/* Hover disini ketika arah mouse ditujukan ke tombol ini, maka desain dari tombol submit akan berubah sesuai dengan sintaks diatas */

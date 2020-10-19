@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id"> 
+<!-- atribut lang memberikan informasi bahwa semua konten yang berada dihalaman ini berbahsa indonesia karena kode untuk bahasa indonesia adalah 'id' -->
+    
+    <head>
+    <!-- Tag head yang menampilkan informasi website -->
+
+        <meta charset="UTF-8"> 
+        <!-- Tag meta berfungsi untuk memudahkan browser mengidentifikasi seluruh konten yang ada di website -->
+        <!-- Atribut charset merupakan kumpulan dari beberapa jenis pengkodean karakter baik huruf, angka, simbol, dan lain-lain -->
+        <!-- Tag Meta charset='UTF-8' berarti halaman ini memberi informasi kepada browser dan search engine untuk melakukan pengkodean karakter sesuai ketentuan UTF-8 -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Tag diatas digunakan untuk desain website menjadi lebih fleksibel -->
+        <!-- Viewport pada meta tag akan mengatur layout lintas perangkat dengan sendirinya -->
+        <!-- Dalam content berisikan nilai yang dibatasi oleh koma, seperti width=device-width artinya lebar layout akan disesuaikan dengan perangkat yang digunakan -->
+        <!-- Nilai initial-scale=1.0 digunakan untuk memastikan layout akan ditampilkan dengan baik pada skala 1:1 dan tidak ada pembesaran yang dilakukan -->
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" >    
+        <!-- Tag link untuk menghubungkan halaman web ke halaman web yang lain -->
+        <!-- Atribut rel='stylesheet' berfungsi untuk menghubungkan kedalam sebuah link website lain sesuai dengan isi nilai dari atribut href -->
+        <!-- Atribut href untuk menentukan alamat URL tujuan dari link -->
+        <!-- Alamat URL yg terdapat pada atribut href ini menghubungkan ke Google Font API -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Tag link untuk menghubungkan halaman web ke halaman web css bootstrap -->
+
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Tag link untuk menghubungkan halaman web ke halaman css berjudul style.css yang terdapat di folder css -->
+
+        <link rel="icon" types="images/svg" href="img/undraw_welcome_3gvl.svg">
+        <!-- Tag link untuk menghubungkan halaman web ke icon yang terdapat pada folder img -->
+
+        <title>Halaman Pendaftaran</title>
+        <!-- Tag title berisikan judul dari website -->
+    </head>
+    <body>
+    <!-- Isi dari website -->
+
+        <div class="header ">
+        <!-- Tag div digunakan untuk mengelompokkan beberapa elemen menjadi satu bagian -->
+        <!-- Atribut class unntuk memudahkan dalam membuat layout yang akan dibuat, disini class pada div awal adalah layout untuk header -->
+
+            <img src="img/1 MfAV3H7kgt5FnES41oJcdg.png">
+            <!-- Tag img untuk menambahkan sebuah gambar ke halaman website dan dihubungkan dengan atribut src untuk mencari letak folder dari gambar tersebut -->
+
+            <h1>Halaman Pendaftaran</h1>
+            <!-- Tag h1 untuk judul dari isi website -->
+
+            <p>Pendaftaran sebagai peserta dalam RAKERWIL (Rapat Kerja Wilayah) Bali dan Nusa Tenggara 2020</p>
+            <!-- Tag p untuk membuat sebuah paragraf -->
+
+        </div>   
+        
+        <form>
+        <!-- Tag form digunakan untuk tempat input data sebelum diproses oleh sistem -->
+
+            <ul class="form-style">
+            <!-- Tag ul untuk membuat daftar tersusun secara acak dan diberikan class untuk memudahkan pada pembuatan css -->
+                <li>
+                    <input type="text" name="namaLengkap" class="field-divided-2" placeholder="Nama Lengkap" /> 
+                    <input type="text" name="namaPanggilan" class="field-divided-2" placeholder="Nama Panggilan" />
+                </li>
+                <!-- Tag li diatas untuk menunjukkan item list pertama yang berisikan dua input data dengan tipe text -->
+                <!-- Tag input diatas juga memiliki class yang mempermudah dalam pembuatan css yaitu field-divided-2 -->
+                <!-- Atribut placeholder menunjukan kalimat yang akan ditampilkan dalam box input data di website -->
+
+                <li>
+                    <input type="number" name="noTelepon" class="field-divided-2" placeholder="No. Telepon" /> 
+                    <input type="email" name="email" class="field-divided-2" placeholder="Email" />
+                </li>
+                <!-- Tag li diatas menunjukkan list item di baris kedua -->
+                <!-- Isi dari item ini adalah input data yang bertipe angka dan email -->
+                <!-- Tag input memiliki atribut class untuk mempermudah dalam pembuatan css -->
+                <!-- Tag input juga memiliki atribut placeholder yang berisikan informasi yang ditampilkan pada box input data di halaman website kita -->
+
+                <li>
+                    <input type="number" name="tanggalLahir" class="field-divided-3" placeholder="Tanggal Lahir" /> 
+                    <input type="text" name="tempatLahir" class="field-divided-3" placeholder="Tempat Lahir" />
+                    <select name="agama" class="field-divided-3">
+                        <option value="Agama">Agama</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen Protestan">Kristen Protestan</option>
+                        <option value="Kristen Katolik">Kristen Katolik</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Kong Hu Cu">Kong Hu Cu</option>
+                    </select>               
+                </li>
+                <!-- Tag list ketiga ini berisikan tiga box yang ditampilkan dalam satu baris -->
+                <!-- Item List ini terdiri dari dua inpu data dan satu select untuk memilih data yang telah disediakan -->
+                <!-- Tag select juga diikuti dengan tag option yang digunakan untuk membuat pilihan -->
+
+                <li>
+                    <input type="text" name="universitas" class="field-divided-3" placeholder="Universitas" /> 
+                    <input type="text" name="fakultas" class="field-divided-3" placeholder="Fakultas/Jurusan" />
+                    <input type="text" name="jabatan" class="field-divided-3" placeholder="Jabatan" /> 
+                </li>
+                <!-- Tag li keempat ini berisikan tiga box input data dalam satu baris -->
+                <!-- Item list yang berada pada baris ini adalah input data dengan tipe data text -->
+
+                <li>
+                    <input type="text" name="alamat" class="field-long" placeholder="Alamat Asal" /> 
+                </li>
+                <!-- Tag li kelima berisikan satu input data yaitu alamat dengan tipe data text -->
+
+                <li>
+                    <label class="divided-2">Foto Alamameter</label>
+                    <label class="divided-2">Scan KTP</label>
+                    <input type="file" class="field-divided-2"  />
+                    <input type="file" class="field-divided-2" />
+                </li>
+                <!-- Tag li keenam ini berisikan input data untuk tipe file -->
+                <!-- Pada tag ini juga diberikan label untuk memberikan keterangan beberapa objek form sama seperti kodingan diatas -->
+
+                <li>
+                    <input type="submit" value="SUBMIT" />
+                </li>
+                <!-- Tag li terakhir ini berisikan input dengan tipe data submit -->
+                <!-- Tipe data submit ini digunakan untuk memulai proses pengolahan data yang berupa masukan, perubahan, atau penghapusan -->
+                <!-- Submit ini berbentuk tombol atau button -->
+                <!-- Untuk mendesain tombol submit ini dapat dilakukan dengan sintaks css -->
+
+            </ul>
+        </form>   
+    </body>
+</html>
