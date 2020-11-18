@@ -1,0 +1,36 @@
+<html>
+    <!-- head konten -->
+    <head>
+        <title>Kalkulator</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" href="assets/img/undraw_Calculator_0evy.svg">
+        <script src="assets/js/script.js"></script> 
+    </head>
+    <!-- body content -->
+    <body>
+        <!-- untuk header yang berisi gambar dan tulisan kalkulator -->
+        <div class="wrap">
+            <img src="assets/img/undraw_Calculator_0evy.svg" width="25%" alt="Kalkulator" align="center">
+                <h1>KALKULATOR</h1>
+        </div>
+        <!-- card untuk menampung kalkulator -->
+        <div class="card">
+                <h2 for="bil1">BILANGAN PERTAMA</h2>
+                <!-- form input untuk bilangan pertama -->
+                    <input type="text" placeholder="Input Angka" id="bil1">
+                <h2 for="bil2">BILANGAN KEDUA</h2>
+                <!-- form input untuk bilangan kedua -->
+                    <input type="text" id="bil2" placeholder="Input Angka">
+                <h2>OPERATOR ARITMATIKA</h2> 
+                <!-- button operator aritmatika -->
+                    <button type="submit" value="+" onclick="tambah()"><b>+</b></button>
+                    <button type="submit" value="-" onclick="kurang()"><b>-</b></button>
+                    <button type="submit" value="*" onclick="kali()"><b>*</b></button>
+                    <button type="submit" value="/" onclick="bagi()"><b>/</b></button>
+                <br>
+                <h2 for="hasil">HASIL</h2>
+                <!-- form input yang akan menampilkan langsung hasil yang didapat setelah user menekan tombol operator aritmatik -->
+                    <input type="text" id="hasil" placeholder="Hasil">
+        </div>
+    </body>
+</html>

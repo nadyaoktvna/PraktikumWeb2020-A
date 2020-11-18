@@ -1,0 +1,70 @@
+body{
+    background-color: aliceblue;
+    background-position: center;
+}
+
+img{
+    display: block;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrap h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: rgb(42, 1, 95);
+    text-align: center;
+}
+
+.card h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(49, 0, 112);
+    text-align: left;
+}
+
+.card{
+    background: whitesmoke;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input[type=text]{
+    margin-left: 5%;
+    border-radius: 6px;
+    border: 3px solid #4e00cc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0px;
+}
+
+input[type=text]:focus{
+    border-color: rgb(0, 0, 0);
+    box-shadow:  0 2px 3px rgb(155, 155, 155);
+}
+
+button[type=submit] {
+    background: linear-gradient(to bottom, #001fcc, #5800cc);
+    border: 1px solid #0088CC;
+    border-radius: 5px;
+    color: #FFF;
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 20px;
+    width: 100px;
+}
+
+button[type=submit]:hover {
+    cursor: pointer;
+    background: rgb(7, 0, 104);
+}
+
+button[type=submit]:active {
+    background: #0044CC;
+}
