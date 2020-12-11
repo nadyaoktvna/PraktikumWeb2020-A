@@ -70,7 +70,7 @@
                                 <td>".$data['nim']."</td>
                                 <td>".$data['alamat']."</td>
                                 <td class='text-center'>
-                                    <a class='btn btn-success' href='edit_user.php?id=".$data['id']."'>
+                                    <a class='btn btn-success' href='edit_data.php?id=".$data['id']."'>
                                         <i class='fa fa-pencil' aria-hidden='true'></i>
                                     </a>
                                     <a class='btn btn-danger' href='delete.php?id_mhs=".$data['id']."'>
@@ -83,7 +83,7 @@
                         ?>
                     </tbody>
                 </table>
-                    <a href="tambah_user.php" class="btn btn-primary">Tambah User</a>
+                    <a href="tambah_data.php" class="btn btn-primary">Tambah Data</a>
             </div>
         </div>
     </div>

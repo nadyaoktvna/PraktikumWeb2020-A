@@ -2,18 +2,9 @@
     include '../koneksi.php';
     session_start();
     $nama = $_SESSION["nama"];
-    
-    // Display selected user data based on id
-    // Getting id from url
     $id = $_GET['id'];
-
-    // Fetech user data based on id
     $query = mysqli_query($kon, "SELECT * FROM mahasiswa WHERE id=$id");
     $data = mysqli_fetch_assoc($query);
-
-    // print "<pre>";
-    // var_dump();
-    // print "</pre>";
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +25,7 @@
             <a href="pegawai.php">
                 Hai pegawai, <?php echo $nama; ?>!
             </a>
-            <a href="../index.php">
+            <a href="../logout.php">
                 <i aria-hidden="true" class="fa fa-arrow-circle-right"></i>
                 Log Out
             </a>
@@ -84,14 +75,12 @@
                     $update = mysqli_query($kon, "UPDATE mahasiswa SET nama='$nama', nim='$nim', alamat='$alamat' WHERE id='$id'");
                     
                     if($update){
-                        header('location:admin.php');
+                        header('location:pegawai.php');
                     }else{
                         echo 'EROR' .mysqli_error();
                     }
                 }
-                
             ?>
-            
             </div>
         </div>
     </div>

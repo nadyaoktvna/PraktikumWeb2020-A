@@ -37,13 +37,12 @@
                                 }
                                 //Cek apakah ada kiriman form dari method post
                                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
                                     session_start();
                                     include "koneksi.php";
                                     $username = input($_POST["username"]);
                                     $p = input(md5($_POST["password"]));
 
-                                    $sql = "select * from users where username='".$username."' and password='".$p."' limit 1";
+                                    $sql = "SELECT * FROM users WHERE username='".$username."' and password='".$p."' limit 1";
                                     $hasil = mysqli_query ($kon, $sql);
                                     $jumlah = mysqli_num_rows($hasil);
 
@@ -55,26 +54,19 @@
                                         $_SESSION["email"]=$row["email"];
                                         $_SESSION["level"]=$row["level"];
                                 
-                                
-                                        if ($_SESSION["level"]=$row["level"]==1)
-                                        {
+                                        if ($_SESSION["level"]=$row["level"]==1){
                                             header("Location:admin/admin.php");
-                                        } else if ($_SESSION["level"]=$row["level"]==2)
-                                        {
+                                        }else if ($_SESSION["level"]=$row["level"]==2){
                                             header("Location:pegawai/pegawai.php");
                                         }else if ($_SESSION["level"]=$row["level"]==3){
                                             header("Location:pegawai/pegawai.php");
                                         }
-                                
-                                        
                                     }else {
                                         echo "<div class='alert alert-danger'>
                                         <strong>Error!</strong> Username dan password salah. 
                                     </div>";
                                     }
-
                                 }
-                            
                             ?>
 							<div class="card-body p-3 pb-3">
                                 <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="post">

@@ -1,10 +1,7 @@
 <?php
-    include '../koneksi.php';
     session_start();
+    include '../koneksi.php';
     $nama = $_SESSION["nama"];
-    $id = $_GET['id'];
-    $query = mysqli_query($kon, "SELECT * FROM mahasiswa WHERE id=$id");
-    $data = mysqli_fetch_assoc($query);
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +22,7 @@
             <a href="pegawai.php">
                 Hai pegawai, <?php echo $nama; ?>!
             </a>
-            <a href="../index.php">
+            <a href="../logout.php">
                 <i aria-hidden="true" class="fa fa-arrow-circle-right"></i>
                 Log Out
             </a>
@@ -33,56 +30,48 @@
         <div class="content">
             <div class="container-fluid mt-2">
                 <label>
-                    <h3>EDIT DATA MAHASISWA</h3>
+                    <h3>TAMBAH DATA MAHASISWA</h3>
                 </label>
                 <form method="POST" action="">
                     <table class="tabel" style="width:50%">
                         <tr>			
                             <th>Nama</th>
                             <td>:
-                                <input type="text" name="nama" value="<?php echo $data['nama']; ?>"
-                                style='width:90%; padding: 5px 5px; margin: 5px 0;background-color: #dee2e6; border: 2px solid #212529; border-radius: 2px;' />
+                                <input type="text" name="nama" style='width:90%; padding: 5px 5px; margin: 5px 0;background-color: #dee2e6; border: 2px solid #212529; border-radius: 2px;'>
                             </td>
                         </tr>
                         <tr>
                             <th>NIM</th>
                             <td>:
-                                <input type="number" name="nim" value="<?php echo $data['nim']; ?>"
-                                style='width:90%; padding: 5px 5px; margin: 5px 0;background-color: #dee2e6; border: 2px solid #212529; border-radius: 2px;' />
+                                <input type="number" name="nim" style='width:90%; padding: 5px 5px; margin: 5px 0;background-color: #dee2e6; border: 2px solid #212529; border-radius: 2px;'>
                             </td>
                         </tr>
                         <tr>
                             <th>Alamat</th>
                             <td>:
-                                <input type="text" name="alamat" value="<?php echo $data['alamat']; ?>"
-                                style='width:90%; padding: 5px 5px; margin: 5px 0;background-color: #dee2e6; border: 2px solid #212529; border-radius: 2px;' />
+                                <input type="text" name="alamat" style='width:90%; padding: 5px 5px; margin: 5px 0;background-color: #dee2e6; border: 2px solid #212529; border-radius: 2px;'>
                             </td>
                         </tr>
                         <tr>
-                        <td><input type="hidden" name="id" value=<?php echo $_GET['id'];?>></td>
-                            <td><br><input type="submit" name="update" value="UPDATE"  style='background-color: #242423; border-radius: 1rem; cursor: pointer; color: white; padding: 8px 20px;'></td>
+                            <td></td>
+                            <td><br><input type="submit" value="SIMPAN"  style='background-color: #242423; border-radius: 1rem; cursor: pointer; color: white; padding: 8px 20px;'></td>
                         </tr>		
                     </table>
                 </form>
-                
-            <?php
-                if($_POST){
-                    $id = $_POST['id'];
-                    $nama = $_POST['nama'];
-                    $nim = $_POST['nim'];
-                    $alamat = $_POST['alamat'];
+    <?php
+        if($_POST){
+            $nama = $_POST['nama'];
+            $nim = $_POST['nim'];
+            $alamat = $_POST['alamat'];
 
-                    $update = mysqli_query($kon, "UPDATE mahasiswa SET nama='$nama', nim='$nim', alamat='$alamat' WHERE id='$id'");
-                    
-                    if($update){
-                        header('location:pegawai.php');
-                    }else{
-                        echo 'EROR' .mysqli_error();
-                    }
-                }
-            ?>
-            </div>
-        </div>
-    </div>
+            $insert = mysqli_query ($kon, "INSERT INTO mahasiswa (nama, nim, alamat) VALUES('$nama','$nim','$alamat')");
+
+            if($insert){
+                header('location:pegawai.php');
+            }else{
+                echo 'EROR' .mysqli_error();
+            }
+        }
+    ?>
 </body>
 </html>
